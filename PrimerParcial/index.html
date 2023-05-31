@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes</title>
+    <script src="main.js" type="module"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <img id="logo" src="./img/pngsuperheroe-removebg-preview.png" alt="">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/PrimerParcial/principal.html" onclick="seleccionar()">Home</a></li>
+                <li><a href="#i" onclick="seleccionar()">Personajes</a></li>
+                <li><a href="#" onclick="seleccionar()">Blog</a></li>
+                <li><a href="#" onclick="seleccionar()">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header>
+        <h1>Crud Heroes</h1>
+    </header>
+    <form id="fr">
+        <fieldset id="Informacion">
+            <h2>Informacion del SuperHeroe</h2>
+            <label id="nmb">Nombre</label>
+            <input type="text" id="nombre" placeholder="Ingrese nombre">
+            <label id="al">Alias</label>
+            <input type="text" id="alias" placeholder="Ingrese alter-ego">
+            <fieldset id="Editorial">
+                <label id="ed">Editorial</label>   
+                <label> 
+                    <img id="mrvlpng" src="./img/marvelpng.png" alt="">
+                </label> 
+                <input type="radio" name="editorial" id="marvel" value="marvel">
+                <label>
+                    <img id="dcpng" src="./img/DC_Comics_logo.svg.png" alt="">
+                </label>
+                <input type="radio" name="editorial" id="dc" value="dc" checked>
+            </fieldset>
+            <label id="frz">Fuerza</label>
+            <input type="range" id="fuerza">
+            <label id="arma">Arma</label>
+            <select id="armas"></select>
+            <section id="botones">
+                <input type="button" value="Guardar" id="guardar">
+                <input type="button" value="Cancelar" id="cancelar">
+                <input type="button" value="Borrar" id="borrar">
+            </section>
+        </fieldset>
+    </form>
+    <div id="spinner"></div>
+    <table id="tTabla"></table>
+    <footer>
+        <nav id="nav">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/PrimerParcial/principal.html" onclick="seleccionar()">Home</a></li>
+                <li><a href="#i" onclick="seleccionar()">Personajes</a></li>
+                <li><a href="#" onclick="seleccionar()">Blog</a></li>
+                <li><a href="#" onclick="seleccionar()">Contacto</a></li>
+            </ul>
+        </nav>
+        <p>Laboratorio III -Todos los Derechos Reservados &copy;</p>
+    </footer>
+</body>
+</html>
